@@ -2,8 +2,16 @@
 
 Stream videos from MediaFire and other file hosts directly in your browser — no downloading needed.
 
-**Player:** https://SkuxSaint.github.io/mf-player
+**Player:** [https://SkuxSaint.github.io/mf-player](https://SkuxSaint.github.io/mf-player)
 
-## Install the bookmarklet
+---
 
-Create a new bookmark and paste this as the URL:
+## Install the Bookmarklet
+
+To stream videos with a single click, add the bookmarklet to your browser:
+
+1. Create a new bookmark in your browser.
+2. Paste the following code as the **URL**:
+
+```javascript
+javascript:(function(){var a=document.querySelector('a[href*="download"]');if(!a){alert('No download link found.');return;}window.location.href='[https://SkuxSaint.github.io/mf-player/?v='+encodeURIComponent(a.href)+'&from='+encodeURIComponent(window.location.href](https://SkuxSaint.github.io/mf-player/?v='+encodeURIComponent(a.href)+'&from='+encodeURIComponent(window.location.href));})();
